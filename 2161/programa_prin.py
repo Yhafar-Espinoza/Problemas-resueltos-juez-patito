@@ -1,0 +1,9 @@
+a,b,c=map(int,input().split())
+cu=a**2
+re=b*c
+if(cu>re):
+    print("cuadrado")
+elif(re>cu):
+    print("rectangulo")
+else:
+    print("ambos")

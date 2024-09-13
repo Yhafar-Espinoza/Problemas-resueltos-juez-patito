@@ -1,0 +1,19 @@
+for i in range(int(input())):
+    n=int(input())
+    su=0
+    multi=1
+    dig=0
+    if(n==0):
+        print(1)
+    elif(n==1):
+        print(0)
+    else:
+        while(n>1):
+            if(n%2!=0):
+                n=n-1
+                dig=4
+            if(n%2==0):  
+                n=n-2
+                su=su+8*multi
+                multi=multi*10
+        print(su+dig*multi)  

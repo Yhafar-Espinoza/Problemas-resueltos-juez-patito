@@ -1,0 +1,76 @@
+x=input()
+mg=list(x)
+for i in range(len(mg)):
+    if(mg[i]==","):
+        mg[i]="."
+su=""
+for k in range(len(mg)):
+    su=su+mg[k]
+n=float(su)
+do=0
+ci=0
+cin=0
+ve=0
+di=0
+m5=0
+m2=0
+m1=0
+z=n%1
+c5=0
+c2=0
+c1=0
+while(n>=200):
+    n=n-200
+    do=do+1
+while(n>=100):
+    n=n-100
+    ci=ci+1
+while(n>=50):
+    n=n-50
+    cin=cin+1
+while(n>=20):
+    n=n-20
+    ve=ve+1
+while(n>=10):
+    n=n-200
+    di=di+1
+while(n>=5):
+    n=n-5
+    m5=m5+1
+while(n>=2):
+    n=n-2
+    m2=m2+1
+while(n>=1):
+    n=n-1
+    m1=m1+1
+while(z>=0.50):
+    z=z-0.50
+    c5=c5+1
+while(z>=0.20):
+    z=z-0.20
+    c2=c2+1
+while(z>=0.10):
+    z=z-0.10
+    c1=c1+1
+if(do>0):
+    print("200",do)
+if(ci>0):
+    print("100",ci)
+if(cin>0):
+    print("50",cin)
+if(ve>0):
+    print("20",ve)
+if(di>0):
+    print("10",di)
+if(m5>0):
+    print("5",m5)
+if(m2>0):
+    print("2",m2)
+if(m1>0):
+    print("1",m1)
+if(c5>0):
+    print("0.5",c5)
+if(c2>0):
+    print("0.2",c2)
+if(c1>0):
+    print("0.1",c1)
